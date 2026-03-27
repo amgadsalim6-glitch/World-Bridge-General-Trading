@@ -6,9 +6,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # 🔐 Security
 SECRET_KEY = 'django-insecure-change-this-key'
 DEBUG = True
+
 ALLOWED_HOSTS = ["*"]
+
 CSRF_TRUSTED_ORIGINS = [
-    "https://*.ngrok-free.dev",
+    "https://*.railway.app",
+    "https://world-bridge-general-trading-production.up.railway.app",
 ]
 
 # 🧩 Apps
@@ -20,17 +23,22 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # 🔥 مهم لو عندك app
+    # 🔥 app بتاعك
     'core',
 ]
 
 # ⚙️ Middleware
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+
+    # 🔥 مهم للـ static
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
     'django.contrib.sessions.middleware.SessionMiddleware',
 
-    # 🔥 اللغة
+    # 🔥 الترجمة
     'django.middleware.locale.LocaleMiddleware',
+
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -38,23 +46,20 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# 🔗 URLs ✅
+# 🔗 URLs
 ROOT_URLCONF = 'worldbridge.urls'
 
 # 🖼 Templates
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-
-        # 🔥 خليه فاضي عشان يعتمد على app templates
         'DIRS': [],
-
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
 
-                # 🔥 مهم لزرار اللغة
+                # 🔥 مهم للترجمة
                 'django.template.context_processors.request',
 
                 'django.contrib.auth.context_processors.auth',
@@ -64,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-# 🧠 WSGI ✅
+# 🧠 WSGI
 WSGI_APPLICATION = 'worldbridge.wsgi.application'
 
 # 🗄 Database
@@ -92,7 +97,6 @@ LANGUAGES = [
 
 LANGUAGE_COOKIE_NAME = 'django_language'
 
-# 🔥 ملفات الترجمة
 LOCALE_PATHS = [
     BASE_DIR / 'locale',
 ]
@@ -110,6 +114,9 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
+
+# 🔥 مهم جدًا لRailway
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # 📁 Media
 MEDIA_URL = '/media/'

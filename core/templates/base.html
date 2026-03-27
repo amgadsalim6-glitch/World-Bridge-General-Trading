@@ -1,0 +1,482 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}" dir="{% if LANGUAGE_CODE == 'ar' %}rtl{% else %}ltr{% endif %}">
+<head>
+<meta charset="UTF-8">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+
+/* ===== COLORS (PREMIUM) ===== */
+:root{
+--main:#0f172a;
+--secondary:#1e293b;
+--gold:#d4af37;
+--light:#f8fafc;
+--text:#e2e8f0;
+}
+
+/* ===== BODY ===== */
+body{
+margin:0;
+font-family:'Poppins','Cairo',sans-serif;
+background:linear-gradient(135deg,#020617,#0f172a);
+color:var(--text);
+}
+
+/* ===== NAV ===== */
+nav{
+background:rgba(15,23,42,0.95);
+backdrop-filter:blur(10px);
+padding:15px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid rgba(212,175,55,0.2);
+}
+
+.nav-logo{
+height:55px;
+transition:0.4s;
+filter:drop-shadow(0 0 10px rgba(212,175,55,0.6));
+}
+
+.nav-logo:hover{
+transform:scale(1.1);
+filter:drop-shadow(0 0 25px var(--gold));
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.nav-links a{
+color:var(--light);
+text-decoration:none;
+font-size:14px;
+position:relative;
+padding:5px 8px;
+transition:0.3s;
+}
+
+.nav-links a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-3px;
+width:0%;
+height:2px;
+background:var(--gold);
+transition:0.3s;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+
+.nav-links a:hover{
+color:var(--gold);
+}
+
+/* ===== LANGUAGE ===== */
+.lang-btn{
+background:linear-gradient(135deg,var(--gold),#b8962e);
+border:none;
+color:black;
+padding:6px 12px;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+}
+
+.lang-btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 15px var(--gold);
+}
+
+/* ===== SERVICES ===== */
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+gap:20px;
+padding:40px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.service-card{
+background:linear-gradient(145deg,#1e293b,#0f172a);
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:0.4s;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+cursor:pointer;
+border:1px solid rgba(212,175,55,0.1);
+}
+
+.service-card i{
+font-size:30px;
+margin-bottom:10px;
+color:var(--gold);
+}
+
+.service-card h3{
+margin:10px 0;
+font-weight:600;
+color:var(--light);
+}
+
+.service-card p{
+font-size:14px;
+opacity:0.8;
+}
+
+.service-list{
+margin-top:10px;
+padding:0;
+list-style:none;
+text-align:left;
+}
+
+.service-list li{
+font-size:13px;
+padding:5px 0;
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+/* HOVER */
+.service-card:hover{
+transform:translateY(-12px) scale(1.05);
+background:linear-gradient(135deg,#d4af37,#b8962e);
+color:black;
+}
+
+.service-card:hover i{
+color:black;
+}
+
+/* ===== HOME CARDS ===== */
+.home-card{
+background:linear-gradient(135deg,#1e293b,#020617);
+border-radius:15px;
+padding:25px;
+box-shadow:0 10px 30px rgba(0,0,0,0.6);
+transition:0.4s;
+}
+
+.home-card i{
+color:var(--gold);
+}
+
+.home-card:hover{
+background:linear-gradient(135deg,var(--gold),#b8962e);
+color:black;
+}
+
+/* ===== CONTACT FULL DESIGN ===== */
+
+/* SECTION */
+.contact-section{
+display:flex;
+min-height:100vh;
+}
+
+/* LEFT SIDE */
+.contact-info{
+width:50%;
+background:linear-gradient(135deg,#0f172a,#1e3a5f);
+color:white;
+padding:60px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+/* RIGHT SIDE */
+.contact-form{
+width:50%;
+background:#f8fafc;
+padding:60px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+color:#0f172a;
+}
+
+/* يخليهم مظبوطين */
+.contact-info,
+.contact-form{
+box-sizing:border-box;
+}
+
+/* TITLE */
+.contact-form h2{
+margin-bottom:25px;
+font-weight:600;
+}
+
+/* INPUT STYLE */
+.input-box{
+position:relative;
+margin-bottom:25px;
+}
+
+.input-box input,
+.input-box textarea{
+width:100%;
+border:none;
+border-bottom:2px solid #ccc;
+padding:12px 5px;
+outline:none;
+background:none;
+transition:0.3s;
+font-size:14px;
+}
+
+/* focus effect */
+.input-box input:focus,
+.input-box textarea:focus{
+border-bottom:2px solid #0f172a;
+}
+
+/* floating label */
+.input-box label{
+position:absolute;
+left:5px;
+top:12px;
+color:#888;
+font-size:14px;
+transition:0.3s;
+pointer-events:none;
+}
+
+.input-box input:focus + label,
+.input-box textarea:focus + label,
+.input-box input:valid + label,
+.input-box textarea:valid + label{
+top:-10px;
+font-size:12px;
+color:#0f172a;
+}
+
+/* BUTTON */
+.contact-form button{
+background:#0f172a;
+color:white;
+padding:12px;
+border:none;
+cursor:pointer;
+border-radius:6px;
+transition:0.3s;
+}
+
+.contact-form button:hover{
+background:#d4af37;
+color:black;
+transform:scale(1.05);
+}
+
+/* تحسين الشكل */
+.contact-info{
+border-right:1px solid rgba(255,255,255,0.1);
+}
+
+.contact-form{
+box-shadow:-10px 0 30px rgba(0,0,0,0.1);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.contact-section{
+flex-direction:column;
+}
+
+.contact-info,
+.contact-form{
+width:100%;
+}
+}
+
+/* ===== SLIDER ===== */
+.slider{
+position:relative;
+width:100%;
+height:300px;
+overflow:hidden;
+}
+
+.slides{
+display:flex;
+height:100%;
+transition:0.6s;
+}
+
+/* 🔥 ده أهم سطر */
+.slides img{
+width:100%;
+height:300px;
+object-fit:cover;
+flex-shrink:0; /* ✨ ده اللي كان ناقص */
+}
+
+.prev, .next{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:black;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+}
+
+.prev{left:10px;}
+.next{right:10px;}
+
+/* ===== LOGO HERO ===== */
+
+.hero{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+padding:60px 20px;
+margin-top:-60px;
+}
+
+/* اللوجو */
+.hero-logo{
+width:220px;
+height:220px;
+border-radius:50%;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+padding:10px;
+box-shadow:0 0 40px rgba(212,175,55,0.4);
+animation:float 4s ease-in-out infinite;
+transition:0.4s;
+}
+
+.hero-logo img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:50%;
+}
+
+.hero-logo:hover{
+transform:scale(1.08);
+box-shadow:0 0 60px rgba(212,175,55,0.8);
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0);}
+}
+
+/* النص */
+.hero-title{
+margin-top:20px;
+font-size:22px;
+color:#fff;
+letter-spacing:2px;
+}
+
+.hero-sub{
+font-size:13px;
+opacity:0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<img src="{% static 'images/logo.png' %}" class="nav-logo">
+
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/services/">Services</a>
+<a href="/contact/">Contact</a>
+<a href="/about/">About</a>
+
+<form action="/i18n/setlang/" method="post">
+{% csrf_token %}
+<input type="hidden" name="language" value="ar">
+<button class="lang-btn">AR</button>
+</form>
+
+<form action="/i18n/setlang/" method="post">
+{% csrf_token %}
+<input type="hidden" name="language" value="en">
+<button class="lang-btn">EN</button>
+</form>
+</div>
+</nav>
+
+{% block content %}{% endblock %}
+
+<a href="https://wa.me/201234567890" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
+<!-- ✅ SLIDER FIX -->
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    let index = 0;
+    const slides = document.querySelector(".slides");
+    const images = document.querySelectorAll(".slides img");
+
+    if(!slides || images.length === 0) return;
+
+    function show(){
+        slides.style.transform = "translateX(-" + (index * 100) + "%)";
+    }
+
+    function next(){
+        index = (index + 1) % images.length;
+        show();
+    }
+
+    function prev(){
+        index = (index - 1 + images.length) % images.length;
+        show();
+    }
+
+    const nextBtn = document.querySelector(".next");
+    const prevBtn = document.querySelector(".prev");
+
+    if(nextBtn) nextBtn.onclick = next;
+    if(prevBtn) prevBtn.onclick = prev;
+
+    setInterval(next, 3000);
+
+    show();
+});
+</script>
+
+</body>
+</html>

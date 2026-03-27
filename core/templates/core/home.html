@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+
+<!-- ===== HERO + SLIDER ===== -->
+<section style="position:relative; text-align:center; overflow:hidden;">
+
+    <div class="slider">
+
+        <div class="slides">
+            <img src="{% static 'images/slider/1.jpg' %}">
+            <img src="{% static 'images/slider/2.jpg' %}">
+            <img src="{% static 'images/slider/3.jpg' %}">
+            <img src="{% static 'images/slider/4.jpg' %}">
+            <img src="{% static 'images/slider/5.jpg' %}">
+            <img src="{% static 'images/slider/6.jpg' %}">
+            <img src="{% static 'images/slider/7.jpg' %}">
+            <img src="{% static 'images/slider/8.jpg' %}">
+            <img src="{% static 'images/slider/9.jpg' %}">
+            <img src="{% static 'images/slider/10.jpg' %}">
+            <img src="{% static 'images/slider/11.jpg' %}">
+            <img src="{% static 'images/slider/12.jpg' %}">
+            <img src="{% static 'images/slider/13.jpg' %}">
+            <img src="{% static 'images/slider/14.jpg' %}">
+            <img src="{% static 'images/slider/15.jpg' %}">
+            <img src="{% static 'images/slider/16.jpg' %}">
+            <img src="{% static 'images/slider/17.jpg' %}">
+            <img src="{% static 'images/slider/18.jpg' %}">
+            <img src="{% static 'images/slider/19.jpg' %}">
+            <img src="{% static 'images/slider/20.jpg' %}">
+        </div>
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
+    </div>
+
+    <!-- LOGO -->
+    <div class="hero">
+
+    <div class="hero-logo">
+        <img src="{% static 'images/logo.png' %}">
+    </div>
+
+</section>
+
+<!-- ===== TITLE ===== -->
+<div class="title-box" style="text-align:center; margin:40px 0;">
+    <h2>{% trans "World Bridge General Trading" %}</h2>
+    <p>{% trans "Global Solutions for Trading & Investment" %}</p>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<div class="home-services">
+
+    <div class="row">
+        <div class="home-card">
+            <i class="fas fa-ship"></i>
+            <h3>{% trans "Import & Export" %}</h3>
+            <p>
+                {% trans "We provide global import and export solutions, connecting suppliers and buyers worldwide with efficiency and reliability." %}
+            </p>
+        </div>
+
+        <div class="home-card">
+            <i class="fas fa-handshake"></i>
+            <h3>{% trans "Commercial Agencies" %}</h3>
+            <p>
+                {% trans "We represent international companies and brands, helping them expand into new markets and grow their business." %}
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="home-card">
+            <i class="fas fa-building"></i>
+            <h3>{% trans "Real Estate & Tourism" %}</h3>
+            <p>
+                {% trans "Investment opportunities in real estate and tourism sectors with high returns and long-term value." %}
+            </p>
+        </div>
+
+        <div class="home-card">
+            <i class="fas fa-apple-alt"></i>
+            <h3>{% trans "Food Trading" %}</h3>
+            <p>
+                {% trans "Supplying high-quality food products that meet international standards and market demands." %}
+            </p>
+        </div>
+    </div>
+
+    <div class="row center">
+        <div class="home-card big">
+            <i class="fas fa-truck"></i>
+            <h3>{% trans "General Supply" %}</h3>
+            <p>
+                {% trans "We provide a wide range of supplies including building materials, chemicals, electrical and electronic equipment tailored for all industries." %}
+            </p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

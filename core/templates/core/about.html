@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<section class="about-container">
+
+    <!-- 🔷 TITLE -->
+    <div class="title-box">
+        <h2>{% trans "About Us" %}</h2>
+    </div>
+
+    <!-- 🔷 INTRO -->
+    <div class="about-box">
+        <p>
+            {% trans "At World Bridge General Trading, we don’t just provide services — we create real opportunities for growth and expansion." %}
+        </p>
+        <p>
+            {% trans "With strong expertise in international trade, investment, and supply, we have built a global network of trusted partners to deliver professional and efficient solutions." %}
+        </p>
+        <p class="highlight">
+            {% trans "Connecting global markets and unlocking unlimited opportunities." %}
+        </p>
+    </div>
+
+    <!-- 🔷 WHO WE ARE -->
+    <div class="about-section">
+        <h3>{% trans "Who We Are" %}</h3>
+        <ul>
+            <li>{% trans "International import & export" %}</li>
+            <li>{% trans "General supply services" %}</li>
+            <li>{% trans "Commercial agencies management" %}</li>
+            <li>{% trans "Real estate & tourism investment" %}</li>
+            <li>{% trans "Food trading & distribution" %}</li>
+        </ul>
+    </div>
+
+    <!-- 🔷 VISION -->
+    <div class="about-section">
+        <h3>{% trans "Our Vision" %}</h3>
+        <p>
+            {% trans "To become the first choice for companies and investors seeking a reliable partner in trade and investment globally." %}
+        </p>
+    </div>
+
+    <!-- 🔷 MISSION -->
+    <div class="about-section">
+        <h3>{% trans "Our Mission" %}</h3>
+        <p>
+            {% trans "Providing high-quality services based on transparency, efficiency, and real results that drive success." %}
+        </p>
+    </div>
+
+    <!-- 🔷 WHY US -->
+    <div class="about-section">
+        <h3>{% trans "Why Choose Us?" %}</h3>
+        <ul>
+            <li>{% trans "Deep understanding of global markets" %}</li>
+            <li>{% trans "Strong international partnerships" %}</li>
+            <li>{% trans "Fast execution and smart decisions" %}</li>
+            <li>{% trans "Custom solutions to maximize profit" %}</li>
+            <li>{% trans "Professional and experienced team" %}</li>
+        </ul>
+    </div>
+
+    <!-- 🔷 FEATURES -->
+    <div class="about-section">
+        <h3>{% trans "What Makes Us Different" %}</h3>
+        <ul>
+            <li>{% trans "Long-term partnerships" %}</li>
+            <li>{% trans "Real measurable results" %}</li>
+            <li>{% trans "Professional client experience" %}</li>
+        </ul>
+    </div>
+
+</section>
+
+{% endblock %}

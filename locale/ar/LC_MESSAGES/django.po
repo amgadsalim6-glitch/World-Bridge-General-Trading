@@ -1,0 +1,266 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+# =========================
+# GLOBAL
+# =========================
+msgid "World Bridge General Trading"
+msgstr "وورلد بريدج للتجارة العامة"
+
+msgid "Global Solutions for Trading & Investment"
+msgstr "حلول عالمية للتجارة والاستثمار"
+
+msgid "Import & Export"
+msgstr "الاستيراد والتصدير"
+
+msgid "Commercial Agencies"
+msgstr "الوكالات التجارية"
+
+msgid "Real Estate & Tourism Investment"
+msgstr "الاستثمار العقاري والسياحي"
+
+msgid "Real Estate & Tourism"
+msgstr "العقارات والسياحة"
+
+msgid "Food Trading"
+msgstr "تجارة المواد الغذائية"
+
+msgid "General Supply"
+msgstr "التوريدات العامة"
+
+msgid "Our Services"
+msgstr "خدماتنا"
+
+msgid "Request via WhatsApp"
+msgstr "اطلب الخدمة عبر واتساب"
+
+msgid "Work Steps:"
+msgstr "خطوات العمل:"
+
+# =========================
+# ABOUT PAGE
+# =========================
+msgid "About Us"
+msgstr "من نحن"
+
+msgid "At World Bridge General Trading, we don’t just provide services — we create real opportunities for growth and expansion."
+msgstr "في وورلد بريدج للتجارة العامة، نحن لا نقدم مجرد خدمات — بل نصنع فرصًا حقيقية للنمو والتوسع."
+
+msgid "With strong expertise in international trade, investment, and supply, we have built a global network of trusted partners to deliver professional and efficient solutions."
+msgstr "بفضل خبرتنا القوية في التجارة الدولية والاستثمار والتوريد، قمنا ببناء شبكة عالمية من الشركاء الموثوقين لتقديم حلول احترافية وفعالة."
+
+msgid "Connecting global markets and unlocking unlimited opportunities."
+msgstr "ربط الأسواق العالمية وفتح فرص بلا حدود."
+
+msgid "Who We Are"
+msgstr "من نحن"
+
+msgid "International import & export"
+msgstr "الاستيراد والتصدير الدولي"
+
+msgid "General supply services"
+msgstr "خدمات التوريد العام"
+
+msgid "Commercial agencies management"
+msgstr "إدارة الوكالات التجارية"
+
+msgid "Food trading & distribution"
+msgstr "تجارة وتوزيع المواد الغذائية"
+
+msgid "Our Vision"
+msgstr "رؤيتنا"
+
+msgid "To become the first choice for companies and investors seeking a reliable partner in trade and investment globally."
+msgstr "أن نصبح الخيار الأول للشركات والمستثمرين الباحثين عن شريك موثوق في التجارة والاستثمار عالميًا."
+
+msgid "Our Mission"
+msgstr "رسالتنا"
+
+msgid "Providing high-quality services based on transparency, efficiency, and real results that drive success."
+msgstr "تقديم خدمات عالية الجودة تعتمد على الشفافية والكفاءة ونتائج حقيقية تدعم النجاح."
+
+msgid "Why Choose Us?"
+msgstr "لماذا نحن؟"
+
+msgid "Deep understanding of global markets"
+msgstr "فهم عميق للأسواق العالمية"
+
+msgid "Strong international partnerships"
+msgstr "شراكات دولية قوية"
+
+msgid "Fast execution and smart decisions"
+msgstr "سرعة في التنفيذ واتخاذ القرار"
+
+msgid "Custom solutions to maximize profit"
+msgstr "حلول مخصصة لزيادة الأرباح"
+
+msgid "Professional and experienced team"
+msgstr "فريق عمل محترف"
+
+msgid "What Makes Us Different"
+msgstr "ما يميزنا"
+
+msgid "Long-term partnerships"
+msgstr "علاقات طويلة الأمد"
+
+msgid "Real measurable results"
+msgstr "نتائج ملموسة"
+
+msgid "Professional client experience"
+msgstr "تجربة احترافية للعملاء"
+
+# =========================
+# SERVICES DETAILS
+# =========================
+
+msgid "We provide complete import and export services for a wide range of products including food, electronics, textiles, and industrial supplies."
+msgstr "نقدم خدمات استيراد وتصدير متكاملة لمجموعة واسعة من المنتجات تشمل المواد الغذائية والأجهزة والمنسوجات والمستلزمات الصناعية."
+
+msgid "Trusted supplier network"
+msgstr "شبكة موردين موثوقة"
+
+msgid "Fast shipping execution"
+msgstr "سرعة في تنفيذ الشحن"
+
+msgid "Competitive pricing"
+msgstr "أسعار تنافسية"
+
+msgid "Full shipment tracking"
+msgstr "متابعة كاملة للشحنات"
+
+msgid "Define product and specifications"
+msgstr "تحديد المنتج والمواصفات"
+
+msgid "Select the best supplier"
+msgstr "اختيار أفضل مورد"
+
+msgid "Quality inspection"
+msgstr "فحص الجودة"
+
+msgid "Shipping & customs clearance"
+msgstr "الشحن والتخليص الجمركي"
+
+msgid "We represent brands and companies and help them expand in global markets with full marketing and distribution solutions."
+msgstr "نقوم بتمثيل العلامات التجارية والشركات ومساعدتها على التوسع في الأسواق العالمية من خلال حلول تسويق وتوزيع متكاملة."
+
+msgid "Market expertise"
+msgstr "خبرة في الأسواق"
+
+msgid "Strong partnerships"
+msgstr "شراكات قوية"
+
+msgid "Marketing support"
+msgstr "دعم تسويقي"
+
+msgid "Sustainable growth"
+msgstr "نمو مستدام"
+
+msgid "Product study"
+msgstr "دراسة المنتج"
+
+msgid "Marketing strategy"
+msgstr "وضع خطة تسويق"
+
+msgid "Distribution & promotion"
+msgstr "التوزيع والترويج"
+
+msgid "Performance tracking"
+msgstr "متابعة الأداء"
+
+msgid "We provide real estate and tourism investment opportunities including apartments, villas, and hotels with high ROI."
+msgstr "نقدم فرص استثمارية في العقارات والسياحة تشمل الشقق والفيلات والفنادق بعوائد مرتفعة."
+
+msgid "Strategic locations"
+msgstr "مواقع استراتيجية"
+
+msgid "Strong ROI"
+msgstr "عائد استثماري قوي"
+
+msgid "Professional consulting"
+msgstr "استشارات احترافية"
+
+msgid "Full project management"
+msgstr "إدارة كاملة للمشروعات"
+
+msgid "Define investment goal"
+msgstr "تحديد الهدف الاستثماري"
+
+msgid "Choose the right project"
+msgstr "اختيار المشروع المناسب"
+
+msgid "Planning & consultation"
+msgstr "التخطيط والاستشارة"
+
+msgid "Execution & follow-up"
+msgstr "التنفيذ والمتابعة"
+
+msgid "We supply high-quality food products including raw materials, packaged goods, and imported items."
+msgstr "نوفر منتجات غذائية عالية الجودة تشمل المواد الخام والمنتجات المعبأة والمستوردة."
+
+msgid "Certified quality"
+msgstr "جودة معتمدة"
+
+msgid "Health compliance"
+msgstr "مطابقة للمعايير الصحية"
+
+msgid "Continuous supply"
+msgstr "توريد مستمر"
+
+msgid "Select product type"
+msgstr "تحديد نوع المنتج"
+
+msgid "Choose best suppliers"
+msgstr "اختيار أفضل الموردين"
+
+msgid "Quality check"
+msgstr "فحص الجودة"
+
+msgid "Supply & delivery"
+msgstr "التوريد والتسليم"
+
+msgid "We provide supply services for companies, factories, and restaurants with high quality and efficiency."
+msgstr "نوفر خدمات التوريد للشركات والمصانع والمطاعم بجودة عالية وكفاءة."
+
+msgid "On-time delivery"
+msgstr "الالتزام بالمواعيد"
+
+msgid "High quality products"
+msgstr "منتجات عالية الجودة"
+
+msgid "Flexible supply"
+msgstr "مرونة في التوريد"
+
+msgid "Identify client needs"
+msgstr "تحديد احتياجات العميل"
+
+msgid "Prepare products"
+msgstr "تجهيز المنتجات"
+
+msgid "Agreement & confirmation"
+msgstr "الاتفاق والتأكيد"
+
+msgid "Delivery"
+msgstr "التسليم"
+
+# =========================
+# HOME TEXTS
+# =========================
+
+msgid "We provide global import and export solutions, connecting suppliers and buyers worldwide with efficiency and reliability."
+msgstr "نقدم حلول استيراد وتصدير عالمية تربط بين الموردين والمشترين بكفاءة وموثوقية."
+
+msgid "We represent international companies and brands, helping them expand into new markets and grow their business."
+msgstr "نقوم بتمثيل الشركات والعلامات التجارية العالمية ومساعدتها على التوسع في أسواق جديدة."
+
+msgid "Investment opportunities in real estate and tourism sectors with high returns and long-term value."
+msgstr "فرص استثمارية في قطاعي العقارات والسياحة بعوائد مرتفعة وقيمة طويلة الأمد."
+
+msgid "Supplying high-quality food products that meet international standards and market demands."
+msgstr "توريد منتجات غذائية عالية الجودة مطابقة للمعايير العالمية واحتياجات السوق."
+
+msgid "We provide a wide range of supplies including building materials, chemicals, electrical and electronic equipment tailored for all industries."
+msgstr "نوفر مجموعة واسعة من التوريدات تشمل مواد البناء والكيماويات والمعدات الكهربائية والإلكترونية لمختلف القطاعات."

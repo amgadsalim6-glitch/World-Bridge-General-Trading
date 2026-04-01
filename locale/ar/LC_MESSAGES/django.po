@@ -9,7 +9,7 @@ msgstr ""
 # GLOBAL
 # =========================
 msgid "World Bridge General Trading"
-msgstr "وورلد بريدج للتجارة العامة"
+msgstr "جسر العالم لتجاره العامه"
 
 msgid "Global Solutions for Trading & Investment"
 msgstr "حلول عالمية للتجارة والاستثمار"

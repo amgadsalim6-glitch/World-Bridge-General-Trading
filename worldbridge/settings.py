@@ -7,11 +7,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-change-this-key'
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "worldlbridge.com",
+    "www.worldlbridge.com",
+    ".railway.app",
+]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.railway.app",
-    "https://world-bridge-general-trading-production.up.railway.app",
+    "https://worldlbridge.com",
+    "https://www.worldlbridge.com",
 ]
 
 # 🧩 Apps

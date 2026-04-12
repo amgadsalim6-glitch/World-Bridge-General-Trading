@@ -45,3 +45,29 @@ def contact(request):
 
 def about(request):
     return render(request, 'core/about.html')
+
+from django.core.mail import send_mail
+from django.shortcuts import render
+
+def contact_view(request):
+    if request.method == "POST":
+        name = request.POST.get("name")
+        email = request.POST.get("email")
+        message = request.POST.get("message")
+
+        full_message = f"""
+        Name: {name}
+        Email: {email}
+
+        Message:
+        {message}
+        """
+
+        send_mail(
+            subject="New Contact Message",
+            message=full_message,
+            from_email="your_email@gmail.com",
+            recipient_list=["info@worldlbridge.com"],
+        )
+
+    return render(request, "contact.html")
